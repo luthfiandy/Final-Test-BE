@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Edit Siswa</title>
+</head>
+<body>
+    <div class="flex flex-col justify-center w-full h-full p-20">
+        <form action="/siswa/update/<%= data.id %>" method="POST" class="flex flex-col justify-center w-full">
+            <div class="flex flex-col justify-center items-center w-full px-44 space-y-8">
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="name">Nama</label>
+                    <input id="nama" name="nama" type="text" placeholder="Nama"
+                      class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                  </div>
+                  <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="tanggal_Lahir">Tanggal Lahir</label>
+                    <input id="tanggal_Lahir" name="tanggal_Lahir" type="date"
+                      class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                  </div>
+                  <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="tempat_Lahir">Tempat Lahir</label>
+                    <input id="tempat_Lahir" name="tempat_Lahir" type="text" placeholder="Tempat Lahir"
+                      class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                  </div>
+                  <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="kelas">Kelas</label>
+                    <select id="kelas" name="kelas" selected
+                      class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                      <option value="Matematika">Kelas Matematika</option>
+                      <option value="IPA">Kelas IPA</option>
+                      <option value="IPS">Kelas IPS</option>
+                      <option value="Bahasa">Kelas Bahasa</option>
+                      <option value="Bela Diri">Kelas Bela Diri</option>
+                      <option value="Tari">Kelas Tari</option>
+                    </select>
+                  </div>
+                  <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="alamat">Alamat</label>
+                    <textarea id="alamat" name="alamat" placeholder="Alamat"
+                      class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"></textarea>
+                  </div>
+                  <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="no_Hp">No HP</label>
+                    <input id="no_Hp" name="no_Hp" type="text" placeholder="No. Handphone"
+                      class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                  </div>
+                  <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="nama_Ortu">Nama Orang Tua</label>
+                    <input id="nama_Ortu" name="nama_Ortu" type="text" placeholder="Nama Orang Tua"
+                      class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                  </div>
+                  <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="parentPhone">No HP Orang Tua</label>
+                    <input id="no_Hp_Ortu" name="no_Hp_Ortu" type="text" placeholder="No. Hp Orang Tua"
+                      class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                  </div>
+                  <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="email">Email</label>
+                    <input id="email" name="email" type="email" placeholder="Email"
+                      class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                  </div>
+                  <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="Password">Password</label>
+                    <input id="password" name="password" type="text" placeholder="Password"
+                      class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+
+                <button type="submit"
+                    class="bg-gray-900 text-lg font-semibold text-gray-100 px-4 py-2 rounded-md w-1/2">
+                    Edit User
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
